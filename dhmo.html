@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dhmo.css">
+    <script src="https://kit.fontawesome.com/b4b4f89259.js" crossorigin="anonymous"></script>
+    <script>
+        function test() {
+            const header = document.getElementById("header");
+            const rect = header.getBoundingClientRect();
+            
+            if(rect.y < -80) {
+                header.style.textShadow = "#111 0 0 15px";
+                header.style.color = "transparent";
+            } else {
+                header.style.removeProperty('textShadow');
+                header.style.removeProperty('color');
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body onscroll="test()">
+    <header id="header">
+        <h1>Dihydrogen Monoxide</h1>
+        <i class="fa-solid fa-skull-crossbones fa-8x" id="skull"></i>
+        <br>
+        <p>You'd better to know about DHMO...</p>
+    </header>
+    <section class="detail" id="detailSection">
+        <h2 id="detailTitle">How dangerous DHMO are?</h2>
+        <ul>
+            <li>
+                <i class="fa-solid fa-lungs fa-2x detail-icon" id="lung"></i>
+                <br>
+                <p class="detail-p">
+                    <span class="capitalize">Death</span> due to accidental inhalation of DHMO, even in small quantities.
+                </p>
+            </li>
+            <li>
+                <i class="fa-solid fa-person-burst fa-2x detail-icon" id="damage"></i>
+                <br>
+                <p class="detail-p">
+                    <span class="capitalize">Prolonged</span> exposure to solid DHMO causes severe tissue damage.
+                </p>
+            </li>
+            <li>
+                <i class="fa-solid fa-droplet fa-2x detail-icon" id="drop"></i>
+                <br>
+                <p class="detail-p">
+                    <span class="capitalize">DHMO</span> is a major component of acid rain.
+                </p>
+            </li>
+            <li>
+                <i class="fa-solid fa-temperature-arrow-up fa-2x detail-icon" id="temp"></i>
+                <br>
+                <p class="detail-p">
+                    <span class="capitalize">DHMO</span> contributes to global warming and the "Greenhouse Effect", and is one of the so-called "greenhouse gasses."
+                </p>
+            </li>
+            <li>
+                <i class="fa-solid fa-bolt fa-2x detail-icon" id="bolt"></i>
+                <br>
+                <p class="detail-p">
+                    <span class="capitalize">Contamination</span> of electrical systems often causes short-circuits.
+                </p>  
+            </li>
+            <li>
+                <i class="fa-solid fa-fire fa-2x detail-icon" id="fire"></i>
+                <br>
+                <p class="detail-p">
+                   <span class="capitalize">Gaseous</span> DHMO can cause severe burns. 
+                </p> 
+            </li>
+        </ul>
+    </section>
+    <section class="facts">
+        <h2 id="facts-title">Scientific Facts</h2>
+        <div>
+            <h3>Phase Diagram of DHMO</h3>
+            <img src="./Phase_diagram_of_water.svg.png" alt="Vapor Pressure">
+        </div>
+        <div>
+            <h3>Vapor Pressere of DHMO</h3>
+            <img src="./Vapor_Pressure_of_Water.png" alt="Vapor Pressure">
+        </div>
+        <div>
+            <h3>Scientific formula of DHMO</h3>
+            <div>
+                <span class="h2o">H</span>2<span class="h2o">O</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy;
+    </footer>
+      
+</body>
+</html>
